@@ -1,14 +1,14 @@
 import java.util.Scanner;
 /**
- * Pattern 2
- *
- * *
- * * *
+ * Pattern 3
  * * * *
+ * * *
+ * *
+ *
  * @author Jeel
  * @since 13-11-2023
  */
-public class Pattern_2 {
+public class Pattern_3 {
     public static void main(String[] args) {
 
         Scanner scanner =new Scanner(System.in); // scanner class
@@ -18,9 +18,10 @@ public class Pattern_2 {
         // outer loop for row
         for (int row = 1; row <= n ; row++){
             // inner loop for column
-            for (int col = 1; col <= row ; col++){
+            for (int col = 1; col <= n-row ; col++){
                 // use System.out.print() for print * in a row
                 System.out.print("* ");
+
             }
             //after a row print new line
             System.out.println();
